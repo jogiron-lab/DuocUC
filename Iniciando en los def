@@ -1,0 +1,25 @@
+def mostrar_menu():
+    print("[1] C -> F")
+    print("[2] F -> C")
+    print("[3] Salir")
+
+def pedir_temperatura():
+    temp = float(input("Ingrese una temperatura: "))
+    return temp
+print(pedir_temperatura())
+
+def mostrar_resultado(orig, conv, ud):
+    print(f"Temperatura inicial {orig}")
+    print(f"Temperatura convertida {conv}")
+    print(f"Unidad: {ud}")
+mostrar_resultado(3.0, 4.0, "CF")
+
+c = float(input("Ingrese los grados: "))
+def cel_a_fa(c):
+    return (c* 9/5) + 32
+print(cel_a_fa(c))
+
+f = float(input("Ingrese los grados: "))
+def fa_a_cel(f):
+    return (f - 32) * 5/9
+print(fa_a_cel(f))
